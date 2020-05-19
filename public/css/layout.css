@@ -1,0 +1,27 @@
+.nav-custom {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+.site-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#btn-navbar {
+  border: 0;
+}
+
+Header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 url(../images/header-background.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+/*# sourceMappingURL=layout.css.map */
