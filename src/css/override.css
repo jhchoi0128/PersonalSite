@@ -1,0 +1,12 @@
+.navbar-light .nav-item.active .nav-link {
+  color: red;
+}
+
+.navbar-light .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-toggler .custom-toggler {
+  border-color: lightgreen;
+}
+/*# sourceMappingURL=override.css.map */
