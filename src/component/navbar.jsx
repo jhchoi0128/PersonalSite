@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light nav-custom">
+    <nav className="navbar navbar-expand-sm navbar-light nav-custom sticky">
       <a className="navbar-brand" href="#">
         <img className="site-logo" src="lukelion.jpg" alt="" />
       </a>

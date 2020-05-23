@@ -2,6 +2,8 @@
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-size: 20px;
+  background-color: gray;
+  opacity: 30%;
 }
 
 .navbar-light .nav-item.active .nav-link {
@@ -22,28 +24,34 @@
   border: 0;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 header {
   position: relative;
-  height: 800px;
-  min-height: 500px;
   width: 100%;
-  background: #161415 url(../images/header-background3.jpg) no-repeat top center;
+  height: 100vh;
+  min-height: 500px;
+  background: url(../images/header-background3.jpg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   overflow: hidden;
 }
 
 header .container .banner {
-  padding: 25% 0;
+  padding: 15% 0;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
 
-header .container .banner-text h1 {
-  font-family: "Courier New", Courier, monospace;
+header .container .banner h1 {
+  font-family: "Palatino", "Comic sans Ms", Verdana, "Courier New", Courier, monospace;
   font-size: 7.51vw;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   letter-spacing: -2px;
   margin: 0 auto;
@@ -66,21 +74,70 @@ header .container .navbar-toggler .custom-toggler {
   margin-top: 5em;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active {
+#btn-custom {
   background-color: transparent;
   border-color: orange;
   border-radius: initial;
-  line-height: 2.5;
+  line-height: 5.5vh;
+  text-transform: uppercase;
 }
 
-.btn-secondary:not(:disabled):not(.disabled).active {
+#btn2-custom {
   background-color: transparent;
   border: none;
   border-radius: initial;
-  line-height: 2.5;
+  line-height: 5.5vh;
+  text-transform: uppercase;
 }
 
-.btn-primary::after {
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item {
+  padding: 2%;
+}
+
+.item-a {
+  background-color: green;
+}
+
+.item-b {
+  background-color: yellow;
+}
+
+@media screen and (min-width: 700px) {
+  .item {
+    padding: 2%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .item-a {
+    background-color: green;
+    width: 50%;
+  }
+  .item-b {
+    background-color: yellow;
+    width: 50%;
+  }
+}
+
+.video {
+  display: inline-block;
   background-color: red;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.article {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=layout.css.map */
