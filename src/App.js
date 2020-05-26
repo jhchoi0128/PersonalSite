@@ -4,13 +4,16 @@ import Header from "./component/header";
 // import "bootstrap/dist/js/bootstrap.bundle.js";
 import "font-awesome/css/font-awesome.css";
 import Somestuff from "./component/somestuff";
+import Profile from "./component/profile";
+
 // import "./css/override.css";
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Header />
+      <Profile />
       <Somestuff />
-    </div>
+    </React.Fragment>
   );
 }
 

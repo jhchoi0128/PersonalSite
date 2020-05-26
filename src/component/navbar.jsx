@@ -1,9 +1,10 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light nav-custom sticky">
-      <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-sm navbar-light nav-custom fixed-top">
+      <a className="navbar-brand" href="#foo">
         <img className="site-logo" src="lukelion.jpg" alt="" />
       </a>
       <button
@@ -24,30 +25,49 @@ const Navbar = () => {
       >
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#foo" onClick={scroll.scrollToTop}>
               Home <span className="sr-only">(current)</span>
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+          <Link
+            activeClass="active"
+            to="profile"
+            spy={true}
+            smooth={true}
+            // offset={0}
+            duration={500}
+          >
+            <li className="nav-item nav-link" style={{ cursor: "pointer" }}>
               Shop
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Resume
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Contact
-            </a>
-          </li>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="profile"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <li className="nav-item nav-link ">About</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="profile"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <li className="nav-item nav-link">Resume</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="profile"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <li className="nav-item nav-link">Contact</li>
+          </Link>
         </ul>
       </div>
     </nav>
